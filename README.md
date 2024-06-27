@@ -1,6 +1,6 @@
 # Bottom line up front
 - You probably don't understand your business as well as you think.
-- Dashboards and SQL are not data analysis tools
+- Dashboards and SQL are not data analysis tools.
 - *What am I missing?* is the most important question in data.
 - Analysts must over-measure then distill (using machine learning).
 - Statistical testing (A/B/n) is important, but we need better theories to test. This is how you get them.
