@@ -5,7 +5,7 @@
 - *What am I missing?* is the most important question in data.
   - That's why analysts and data scientists should over-measure phenomena then distill the data using ML.
 - Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories.
-  - See [notebook 3](./3_understanding.ipynb) for a demonstration of this.
+  - See [notebook 3](./3_understanding.ipynb) for a demo of deeper exploration.
 
 # Intro
 This project uses a simple Linux GPU setup to model stock market data. It may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
