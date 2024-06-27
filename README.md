@@ -19,7 +19,7 @@ The notebooks
 1. `1_feature_prep.ipynb` prepares the target and feature data for notebooks 2 and 3.
 2. `2_prediction.ipynb` gives a classic case of using ML for prediction.
 3. **`3_understanding.ipynb` demonstrates the main purpose of this repo. It makes a simple, powerful case for using ML to build understanding.**
-4. `7_business_credit_risk_proxy.ipynb` is just a fun, industry-specific prediction problem.
+4. `7_business_credit_risk_proxy.ipynb` is a stand-alone notebook about a fun, industry-specific problem.
 
 # Setup
 1. Create anaconda environment then activate.
