@@ -3,7 +3,7 @@
 - Dashboards and SQL are not data analysis tools.
 - *What am I missing?* is the most important question in data.
 - Analysts must over-measure then distill (using machine learning).
-- Statistical testing (A/B/n) is important, but we need better theories to test. This is a better way to generate them.
+- Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories.
 
 See [notebook 3](./3_understanding.ipynb) for more information.
 
