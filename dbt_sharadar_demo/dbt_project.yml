@@ -1,0 +1,43 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'dbt_sharadar_demo'
+version: '1.0.0'
+config-version: 2
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'dbt_sharadar_demo'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  dbt_sharadar_demo:
+    +materialized: table
+
+vars:
+  price_interpolation_interval: '13 months'
+  # Column groupings for financial dimensions
+  sf1_ratio_fields: ['assetturnover', 'currentratio', 'de', 'divyield', 'ebitdamargin', 'evebit', 'evebitda', 'grossmargin', 'netmargin', 'payoutratio', 'pb', 'pe', 'pe1', 'ps', 'ps1', 'roa', 'roe', 'roic', 'ros']
+  sf1_currency_fields: ['accoci', 'assets', 'assetsavg', 'assetsc', 'assetsnc', 'capex', 'cashneq', 'cashnequsd', 'cor', 'consolinc', 'debt', 'debtc', 'debtnc', 'debtusd', 'deferredrev', 'depamor', 'deposits', 'ebit', 'ebitda', 'ebitdausd', 'ebitusd', 'ebt', 'equity', 'equityavg', 'equityusd', 'ev', 'fcf', 'gp', 'intangibles', 'intexp', 'invcap', 'invcapavg', 'inventory', 'investments', 'investmentsc', 'investmentsnc', 'liabilities', 'liabilitiesc', 'liabilitiesnc', 'marketcap', 'ncf', 'ncfbus', 'ncfcommon', 'ncfdebt', 'ncfdiv', 'ncff', 'ncfi', 'ncfinv', 'ncfo', 'ncfx', 'netinc', 'netinccmn', 'netinccmnusd', 'netincdis', 'netincnci', 'opex', 'opinc', 'payables', 'ppnenet', 'prefdivis', 'receivables', 'retearn', 'revenue', 'revenueusd', 'rnd', 'sbcomp', 'sgna', 'tangibles', 'taxassets', 'taxexp', 'taxliabilities', 'workingcapital']
+  # Days of month to keep (defines number of rows in final fact table which contains target variable)
+  prices_days_of_month_to_keep: (3)

@@ -1,0 +1,52 @@
+name: analytics_demo
+channels:
+  - rapidsai
+  - conda-forge
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - catboost
+  - dash
+  - dask
+  - dbt-duckdb
+  - hdbscan
+  - ipykernel
+  - ipyleaflet
+  - jupyter_client
+  - jupyter_core
+  - jupyter_server
+  - jupyterlab
+  - jupyterlab_pygments
+  - jupyterlab_server
+  - jupyterlab_widgets
+  - lime
+  - matplotlib-base
+  - matplotlib-inline
+  - numpy
+  - numpydoc
+  - optuna
+  - openpyxl
+  - pandas
+  - plotly
+  - pygraphviz
+  - python-duckdb
+  - requests
+  - requests-futures
+  - scikit-learn
+  - scipy
+  - seaborn
+  - shap
+  - statsmodels
+  - sqlalchemy
+  - tensorflow
+  - umap-learn
+  - xgboost
+  # gpu-specific packages:
+  - cuda-version=11.8
+  - rapids=24.04
+  - pip:
+    - apachelogs
+    - graphviz
+    - user_agents

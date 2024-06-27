@@ -1,0 +1,18 @@
+version: 2
+
+
+sources:
+  - name: raw
+    database: sharadar
+    schema: main
+    tables:
+      - name: actions
+      - name: daily
+      - name: indicators
+      - name: sep
+      - name: sf1
+      - name: sf2
+      - name: sf3
+      - name: sfp
+      - name: tickers
+      - name: sf1_columns_metadata
