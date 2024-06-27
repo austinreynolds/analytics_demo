@@ -3,7 +3,7 @@
 - Dashboards and SQL are not adequate data analysis tools.
 - Machine learning isn't just for making predictions; you can use it for investigation.
 - *What am I missing?* is the most important question in data.
-  - That's why analysts and data scientists should over-measure phenomena then distill the data using ML.
+  - That's why analysts and data scientists should *over-measure then distill* with ML.
 - Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories.
   - See [notebook 3](./3_understanding.ipynb) for a demo of deeper exploration.
 
