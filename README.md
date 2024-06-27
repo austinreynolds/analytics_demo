@@ -16,10 +16,10 @@ The `download.py` script fetches the tables via the Nasdaq API and stores them i
 <img src="./images/dbt_lineage.png" alt="dbt lineage graph" width="1000"/>
 
 The notebooks
-1. `1_feature_prep.ipynb` prepares the target and feature data for notebooks 2 and 3.
-2. `2_prediction.ipynb` gives a classic case of using ML for prediction.
-3. **`3_understanding.ipynb` demonstrates the main purpose of this repo. It makes a simple, powerful case for using ML to build understanding.**
-4. `7_business_credit_risk_proxy.ipynb` is a stand-alone notebook about a fun, industry-specific problem.
+1. [1_prep.ipynb](./1_prep.ipynb) prepares the target and feature data for notebooks 2 and 3.
+2. [2_prediction.ipynb](./2_prediction.ipynb) gives a classic case of using ML for prediction.
+3. **[3_understanding.ipynb](./3_understanding.ipynb) demonstrates the main purpose of this repo. It gives a simple, powerful example of how to use ML to build understanding.**
+4. [7_business_credit_risk_proxy.ipynb](7_business_credit_risk_proxy.ipynb) is a stand-alone notebook about a fun, industry-specific problem.
 
 # Setup
 1. Create anaconda environment then activate.
