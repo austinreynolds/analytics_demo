@@ -1,12 +1,11 @@
-### Disclaimer: **I am not an investment professional. None of my work within or related to this repository should be considered investment advice. It is not.**
-
 # Bottom line up front
-From the conclusion in [notebook 3](./3_understanding.ipynb):
-- Statistical testing (A/B/n) is important, but we need better theories to test.
 - You probably don't understand your business as well as you think.
-- Using data to learn about your business requires more than dashboards and SQL.
-- The most important (and daunting) question in data is: *What am I missing?*
-- Analysts must therefore over-measure, then distill using ML.
+- Dashboards and SQL are not data analysis tools
+- *What am I missing?* is the most important question in data.
+- Analysts must over-measure then distill (using machine learning).
+- Statistical testing (A/B/n) is important, but we need better theories to test. This is how you get them.
+
+See [notebook 3](./3_understanding.ipynb) for more information.
 
 # Intro
 This project uses a simple Linux setup to model stock market data. Because it was written on a powerful GPU-enabled workstation, it may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
@@ -55,3 +54,7 @@ conda env remove --name analytics_demo
 ```
 
 [See here](https://docs.anaconda.com/anaconda/install/uninstall/) if you also wish to remove Anaconda.
+
+---
+
+### Disclaimer: **I am not an investment professional. None of my work within or related to this repository should be considered investment advice. It is not.**
