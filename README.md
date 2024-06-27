@@ -1,8 +1,9 @@
 # Bottom line up front
-- You probably don't understand your business as well as you think.
-- Dashboards and SQL are not data analysis tools.
+- You probably haven't learned everything you need to from your business data.
+- Dashboards and SQL are not adequate data analysis tools.
+- Machine learning isn't just for making predictions; you can use it for investigation.
 - *What am I missing?* is the most important question in data.
-- Analysts must over-measure then distill (using machine learning).
+  - That's why analysts and data scientists should over-measure phenomena then distill the data using ML.
 - Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories.
 
 See [notebook 3](./3_understanding.ipynb) for more information.
@@ -11,9 +12,15 @@ See [notebook 3](./3_understanding.ipynb) for more information.
 This project uses a simple Linux GPU setup to model stock market data. It may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
 
 # Project structure
-The `download.py` script fetches the tables via the Nasdaq API and stores them in `$DATA_HOME/analytics_demo`, both within a [duckdb](https://www.duckdb.org) file and individually as parquet files. The [dbt](https://www.getdbt.com) project, located in the [dbt_sharadar_demo folder](./dbt_sharadar_demo), must then be run for preprocessing. See the lineage graph below to get a sense of its structure. The Jupyter notebook `1_feature_prep.ipynb` must be run before notebooks 2 and 3.
+The `download.py` script fetches the tables via the Nasdaq API and stores them in `$DATA_HOME/analytics_demo`, both within a [duckdb](https://www.duckdb.org) file and individually as parquet files. The [dbt](https://www.getdbt.com) project, located in the [dbt_sharadar_demo folder](./dbt_sharadar_demo), must then be run for preprocessing. See the lineage graph below to get a sense of its structure:
 
 <img src="./images/dbt_lineage.png" alt="dbt lineage graph" width="1000"/>
+
+The notebooks
+1. `1_feature_prep.ipynb` prepares the target and feature data for notebooks 2 and 3.
+2. `2_prediction.ipynb` gives a classic case of using ML for prediction.
+3. **`3_understanding.ipynb` demonstrates the main purpose of this repo. It makes a simple, powerful case for using ML to build understanding.**
+4. `7_business_credit_risk_proxy.ipynb` is just a fun, industry-specific prediction problem.
 
 # Setup
 1. Create anaconda environment then activate.
