@@ -15,7 +15,7 @@ The `download.py` script fetches the tables via the Nasdaq API and stores them i
 
 <img src="./images/dbt_lineage.png" alt="dbt lineage graph" width="1000"/>
 
-## The notebooks
+The notebooks:
 - [1_prep.ipynb](./1_prep.ipynb) prepares the target and feature data for notebooks 2 and 3.
 - [2_prediction.ipynb](./2_prediction.ipynb) gives a classic case of using ML for prediction.
 - **[3_understanding.ipynb](./3_understanding.ipynb) demonstrates the main purpose of this repo. It gives a simple, powerful example of how to use ML to build understanding.**
