@@ -3,9 +3,10 @@
 - Dashboards and SQL are not adequate data analysis tools.
 - Machine learning isn't just for making predictions; you can use it for investigation.
 - *What am I missing?* is the most important question in data.
-  - To miss less, investigators must *over-measure then distill with ML*.
-- Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories about what is happening.
-  - See [notebook 3](./3_understanding.ipynb) for a example of deeper exploration.
+  - Investigators must *over-measure then distill with ML* in order to miss less.
+- Statistical testing (A/B/n) is important to assess an idea, but *we need to generate better ideas*.
+  - ML-powered exploration, by taking more into account, can lead to deeper, more complete theories about what is happening.
+  - See [notebook 3](./3_understanding.ipynb) for a example.
 
 # Intro
 This project uses a simple Linux GPU setup to model stock market data. It may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
