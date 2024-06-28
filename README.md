@@ -3,7 +3,7 @@
 - Dashboards and SQL are not adequate data analysis tools.
 - Machine learning isn't just for making predictions; you can use it for investigation.
 - *What am I missing?* is the most important question in data.
-  - That's why analysts and data scientists should *over-measure then distill* with ML.
+  - Therefore analysts and data scientists must *over-measure then distill with ML*.
 - Statistical testing (A/B/n) is important, but we need better theories to test. Deeper exploration generates better theories about what is happening.
   - See [notebook 3](./3_understanding.ipynb) for a example of deeper exploration.
 
@@ -11,7 +11,7 @@
 This project uses a simple Linux GPU setup to model stock market data. It may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
 
 # Project structure
-The `download.py` script fetches the tables via the Nasdaq API and stores them in `$DATA_HOME/analytics_demo`, both within a [duckdb](https://www.duckdb.org) file and individually as parquet files. The [dbt](https://www.getdbt.com) project, located in the [dbt_sharadar_demo folder](./dbt_sharadar_demo), must then be run for preprocessing. See the lineage graph below to get a sense of its structure:
+The `download.py` script fetches the tables via the Nasdaq API and stores them in `$DATA_HOME/analytics_demo`, both within a [duckdb](https://www.duckdb.org) file and individually as parquet files. The [dbt](https://www.getdbt.com) project, located in [dbt_sharadar_demo](./dbt_sharadar_demo), must then be run for preprocessing. Its lineage graph:
 
 <img src="./images/dbt_lineage.png" alt="dbt lineage graph" width="1000"/>
 
