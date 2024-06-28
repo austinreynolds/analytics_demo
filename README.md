@@ -9,7 +9,7 @@
   - See notebook 3 for an example: [Latent dimensions: The most powerful analysis nobody does](./3_understanding.ipynb).
 
 # Intro
-This project uses a simple Linux GPU setup to model stock market data. It may require modification to run in different environments. The data are from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA). Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected. [Anaconda](https://www.anaconda.com/download) is used for the Python distribution.
+This project uses a simple Linux GPU setup to model stock market data. It uses the [Anaconda](https://www.anaconda.com/download) Python distribution and data from the [Sharadar Core US Equities Bundle](https://data.nasdaq.com/databases/SFA) on the Nasdaq data link. Environmental variables `NASDAQ_DATA_API_KEY` and `DATA_HOME` are expected.
 
 # Project structure
 The `download.py` script fetches the tables via the Nasdaq API and stores them in `$DATA_HOME/analytics_demo`, both within a [duckdb](https://www.duckdb.org) file and individually as parquet files. The [dbt](https://www.getdbt.com) project, located in [dbt_sharadar_demo](./dbt_sharadar_demo), must then be run for preprocessing. Its lineage graph:
