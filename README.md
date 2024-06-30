@@ -1,7 +1,7 @@
 # Bottom line up front
 - You probably haven't learned everything you need to from your business data.
-- Machine learning isn't just for making predictions; you can use it for investigation.
 - Dashboards and SQL display reults; they are not adequate analysis tools.
+- Machine learning isn't just for making predictions; you can use it for investigation.
 - *What am I missing?* is the most important question in data.
   - Investigators must *over-measure then distill with ML* in order to miss less.
 - Statistical testing (A/B/n) is important to assess an idea, but *we need to generate better ideas*.
