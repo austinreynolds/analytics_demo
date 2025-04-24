@@ -1,0 +1,7 @@
+jupyterlab
+optuna
+pandas
+plotly
+scikit-learn
+umap-learn
+xgboost
